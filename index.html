@@ -4,20 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+    <title>How to display a 360 image in HTML?</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    #panorama-360-view {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
   <body>
-    <h1>Google VR View for the Web</h1>
-    <iframe
-      class="ku-embed"
-      frameborder="0"
-      allow="xr-spatial-tracking; gyroscope; accelerometer"
-      allowfullscreen
-      scrolling="no"
-      src="https://kuula.co/share/collection/79L2T?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=3"
-    ></iframe>
-    <!-- https://developers.google.com/vr/discover/360-degree-media -->
-    <!-- https://developers.google.com/vr/develop/web/vrview-web -->
+    <div id="panorama-360-view"></div>
   </body>
+  <!-- Pannellum library -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.css"
+    integrity="sha512-UoT/Ca6+2kRekuB1IDZgwtDt0ZUfsweWmyNhMqhG4hpnf7sFnhrLrO0zHJr2vFp7eZEvJ3FN58dhVx+YMJMt2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pannellum/2.5.6/pannellum.js"
+    integrity="sha512-EmZuy6vd0ns9wP+3l1hETKq/vNGELFRuLfazPnKKBbDpgZL0sZ7qyao5KgVbGJKOWlAFPNn6G9naB/8WnKN43Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- End Pannellum library -->
+  <script src="main.js"></script>
 </html>
