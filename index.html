@@ -9,17 +9,15 @@
   </head>
   <body>
     <h1>Google VR View for the Web</h1>
-    <div id="vrview"></div>
+    <iframe
+      class="ku-embed"
+      frameborder="0"
+      allow="xr-spatial-tracking; gyroscope; accelerometer"
+      allowfullscreen
+      scrolling="no"
+      src="https://kuula.co/share/collection/79L2T?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1"
+    ></iframe>
     <!-- https://developers.google.com/vr/discover/360-degree-media -->
     <!-- https://developers.google.com/vr/develop/web/vrview-web -->
   </body>
-  <script>
-    window.addEventListener("load", onVrViewLoad);
-
-    function onVrViewLoad() {
-      var vrView = new VRView.Player("#vrview", {
-        image: "./IMG_5414.JPG",
-      });
-    }
-  </script>
 </html>
